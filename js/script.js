@@ -1,12 +1,12 @@
 const blogs = [
-    { title: 'Blog Post Title 1', date: '2025-01-14', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blog1.html', image: 'images/3dbuildings.png' },
-    { title: 'Blog Post Title 2', date: '2025-01-13', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blog2.html', image: 'images/3dbuildings.png' },
-    { title: 'Blog Post Title 3', date: '2025-01-12', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blog3.html', image: 'images/3dbuildings.png' },
-    { title: 'Blog Post Title 4', date: '2025-01-11', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blog4.html', image: 'images/3dbuildings.png' },
-    { title: 'Blog Post Title 5', date: '2025-01-10', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blog5.html', image: 'images/3dbuildings.png' },
-    { title: 'Blog Post Title 6', date: '2025-01-09', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blog6.html', image: 'images/3dbuildings.png' },
-    { title: 'Blog Post Title 7', date: '2025-01-08', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blog7.html', image: 'images/3dbuildings.png' },
-    // { title: 'Blog Post Title 8', date: '2025-01-07', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blog8.html', image: 'images/3dbuildings.png' },
+    { title: 'Blog Post Title 1', date: '2025-01-14', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blogs/blog1.html', image: 'images/3dbuildings.png' },
+    { title: 'Blog Post Title 2', date: '2025-01-13', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blogs/blog2.html', image: '../images/3dbuildings.png' },
+    { title: 'Blog Post Title 3', date: '2025-01-12', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blogs/blog3.html', image: '../images/3dbuildings.png' },
+    { title: 'Blog Post Title 4', date: '2025-01-11', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blogs/blog4.html', image: '../images/3dbuildings.png' },
+    { title: 'Blog Post Title 5', date: '2025-01-10', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blogs/blog5.html', image: '../images/3dbuildings.png' },
+    { title: 'Blog Post Title 6', date: '2025-01-09', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blogs/blog6.html', image: '../images/3dbuildings.png' },
+    { title: 'Blog Post Title 7', date: '2025-01-08', category: 'category1', description: 'A brief description of what this blog post is about...', link: 'blogs/blog7.html', image: '../images/3dbuildings.png' },
+    { title: 'Blog Post Title 8', date: '2025-01-07', category: 'category2', description: 'A brief description of what this blog post is about...', link: 'blogs/blog8.html', image: '../images/3dbuildings.png' },
 ];
 
 let currentPage = 1;

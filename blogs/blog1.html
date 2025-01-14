@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Title 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .truncate-2-lines {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .truncate-1-line {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .caption-below {
+            display: block;
+            text-align: center;
+            width: 100%;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+        .image-container {
+            display: inline-block;
+            width: 16rem; /* Matching the width of the image */
+        }
+        .clear-both {
+            clear: both;
+        }
+        .table-container {
+            width: 50%;
+            float: left;
+            margin-right: 1rem;
+        }
+        .caption-below {
+            width: 100%;
+            text-align: center;
+        }
+        ul.list-disc {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4 flex items-center">
+        <h3 class="text-2xl w-4/5 mx-auto pl-4">Blogs</h3>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- Blog Content -->
+        <section class="col-span-3 bg-white p-6 rounded-lg shadow">
+            <img src="../images/3dbuildings.png" alt="Banner Image" class="w-full h-64 object-cover rounded-lg mb-6">
+            
+            <h1 class="text-3xl font-bold mb-2">VirtuGhan</h1>
+            <p class="text-sm text-gray-600 mb-4">Date: January 14, 2025 | Author: Upendra Oli, Kshitij Raj Sharma</p>
+            
+            <div>
+                <h2 class="text-2xl font-bold mb-2">Introduction</h2>
+                <p class="mb-4">This is where your blog post content will go. Write about your topic here...</p>
+                
+                <div class="mb-4">
+                    <div class="image-container float-left mr-4">
+                        <img src="../images/3dbuildings.png" alt="Inline Image" class="w-64 h-48 object-cover rounded-lg mb-2">
+                        <p class="italic text-sm text-gray-500 caption-below">*Caption for the inline image*</p>
+                    </div>
+                    <p class="mb-4">Example of a wrapped photo with some text flowing around it. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+                <div class="mb-4 clear-both">
+                    <div class="image-container">
+                        <img src="../images/3dbuildings.png" alt="Another Image" class="w-64 h-48 object-cover rounded-lg mb-2">
+                        <p class="italic text-sm text-gray-500 caption-below">*Caption for the another image*</p>
+                    </div>
+                    <p class="mb-4">Another example of a photo without text wrapping. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam...</p>
+                </div>
+                <div class="clear-both">
+                    <p>This is a normal paragraph after the images...</p>
+                </div>
+                
+                <h2 class="text-2xl font-bold mt-6 mb-2">Table Example</h2>
+                <!-- Wrapped Table -->
+                <div class="table-container">
+                    <p class="mb-4">This is some content that wraps based on the table width. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <table class="min-w-full bg-white" style="width: 50%; float: left;">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th class="py-2">Column 1</th>
+                                <th class="py-2">Column 2</th>
+                                <th class="py-2">Column 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border px-4 py-2">Row 1 Data 1</td>
+                                <td class="border px-4 py-2">Row 1 Data 2</td>
+                                <td class="border px-4 py-2">Row 1 Data 3</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2">Row 2 Data 1</td>
+                                <td class="border px-4 py-2">Row 2 Data 2</td>
+                                <td class="border px-4 py-2">Row 2 Data 3</td>
+                            </tr>
+                        </tbody>
+                        <caption class="caption-below italic text-sm text-gray-500 truncate-2-lines" style="width: 100%; text-align: center;">*This is a wrapped table caption that demonstrates how it will be displayed if it exceeds the width*</caption>
+                    </table>
+                </div>
+                <div style="clear: both;"></div>
+
+                <!-- Unwrapped Table -->
+                <table class="min-w-full bg-white mt-4">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="py-2">Column 1</th>
+                            <th class="py-2">Column 2</th>
+                            <th class="py-2">Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">Row 1 Data 1</td>
+                            <td class="border px-4 py-2">Row 1 Data 2</td>
+                            <td class="border px-4 py-2">Row 1 Data 3</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">Row 2 Data 1</td>
+                            <td class="border px-4 py-2">Row 2 Data 2</td>
+                            <td class="border px-4 py-2">Row 2 Data 3</td>
+                        </tr>
+                    </tbody>
+                    <caption class="caption-below italic text-sm text-gray-500 truncate-1-line">*This is an unwrapped table caption*</caption>
+                </table>
+
+                
+               
+                <h2 class="text-2xl font-bold mt-6 mb-2">Conclusion</h2>
+                <p class="mb-4">Wrap up your blog post with a conclusion here...</p>                
+            </div>
+        </section>
+
+
+        <!-- Relevant Blogs -->
+        <aside class="bg-white p-6 rounded-lg shadow lg:col-span-1">
+            <h2 class="text-2xl font-bold mb-4">Related Blogs</h2>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                    <img src="images/3dbuildings.png" alt="Related Blog 1" class="w-16 h-16 object-cover rounded">
+                    <div class="flex-1 overflow-hidden">
+                        <h3 class="font-bold truncate-2-lines">Related Blog Title 1 title 1 title 1</h3>
+                        <p class="text-sm text-gray-600 truncate-1-line">A brief description of the related blog...</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="images/3dbuildings.png" alt="Related Blog 2" class="w-16 h-16 object-cover rounded">
+                    <div class="flex-1 overflow-hidden">
+                        <h3 class="font-bold truncate-2-lines">Related Blog Title 2</h3>
+                        <p class="text-sm text-gray-600 truncate-1-line">A brief description of the related blog...</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="images/3dbuildings.png" alt="Related Blog 3" class="w-16 h-16 object-cover rounded">
+                    <div class="flex-1 overflow-hidden">
+                        <h3 class="font-bold truncate-2-lines">Related Blog Title 3</h3>
+                        <p class="text-sm text-gray-600 truncate-1-line">A brief description of the related blog...</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="bg-blue-500 text-white text-center p-6">
+        <p>&copy; 2025 Your Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
