@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-500 text-white p-4 flex items-center">
+        <h3 class="text-2xl w-4/5 mx-auto pl-4">Blogs</h3>
+    </header>
+
+    <section class="w-4/5 mx-auto p-6">
+        <div class="flex items-center">
+            <div class="flex-shrink-0">
+                <img src="images/profile.jpg" alt="Your Photo" class="rounded-full w-32 h-32">
+            </div>
+            <div class="ml-6">
+                <h2 class="text-2xl mt-4">Upendra Oli</h2>
+                <p class="text-gray-700">MSc Student, University of Salzburg, Palacký University Olomouc (2024-2026)</p>
+            </div>
+            <div class="ml-6 flex-grow text-gray-700">
+                <p class="mt-4">A forward-thinking technologist aiming to revolutionize geospatial analysis and visualization through cutting-edge tools and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-4/5 mx-auto p-6">
+        <div class="flex mb-4 space-x-2">
+            <input type="text" id="searchInput" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded">
+            <select id="categoryFilter" class="p-2 border border-gray-300 rounded text-sm text-gray-700">
+                <option value="">Filter by Category</option>
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+            </select>
+            <select id="sortFilter" class="p-2 border border-gray-300 rounded text-sm text-gray-700">
+                <option value="date-asc">Sort by Date Ascending</option>
+                <option value="date-dsc">Sort by Date Descending</option>
+                <option value="name">Sort by Name</option>
+            </select>
+        </div>
+        <div id="blogList" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Blog posts will be injected here by JavaScript -->
+        </div>
+        <div class="flex justify-end mt-4">
+            <button id="prevPage" class="mx-2 p-2 bg-blue-500 text-white rounded">Previous</button>
+            <button id="nextPage" class="mx-2 p-2 bg-blue-500 text-white rounded">Next</button>
+        </div>
+    </section>
+
+    <footer class="bg-blue-500 text-white text-center p-6">
+        <p>&copy; 2025 Your Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

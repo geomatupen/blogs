@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <header class="bg-blue-700 text-white py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">{{ site.name }}</h1>
+            <nav class="flex space-x-4">
+                <a href="{{ site.baseurl }}/" class="text-white" title="{{ site.name }} – {{ site.description }}">Home</a>
+                <a href="{{ site.baseurl }}/about" class="text-white" title="{{ site.name }} – {{ site.description }}">About</a>
+                <a href="{{ site.baseurl }}/contact" class="text-white" title="{{ site.name }} – {{ site.description }}">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main" role="main" class="container mx-auto mt-8">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
